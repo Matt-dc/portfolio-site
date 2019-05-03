@@ -1,0 +1,510 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    letter-spacing:1.5px;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+section {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/************************
+    BANNER SECTION
+************************/
+
+
+
+
+#scene-pin {
+  width: 100vw;
+}
+
+#cover {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.cover {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+#bg-image {
+  position: fixed;
+  background: url("city-scape2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  filter: grayscale(100%);
+}
+
+#site-name {
+  position: fixed;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 2;
+}
+
+#site-name > h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  /* color: #4169E1; */
+  opacity: 1;
+  filter: brightness(100%);
+  margin-bottom: 7%;
+}
+
+#site-name > p {
+  margin-bottom: 7%;
+}
+
+ #down-line {
+  height: 50px;
+  position: relative;
+  border-left: 1px dashed #fff;
+  left: 50%;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.2em 0;
+  margin-bottom: 5%;
+
+}
+
+
+#down-arrow p {
+  display: inline-block;
+  font-size: 0.7em;
+  transform: translateX(-0%);
+  transform: rotate(-90deg);
+}
+
+
+
+/************************
+    TOP NAVIGATION
+************************/
+nav {
+  transform: matrix(1, 0, 0, 1, 0, 0) !important;
+}
+
+nav.top-nav {
+  position: fixed;
+  left: 50%;
+  z-index: 2;
+  width: 90%
+}
+
+nav.top-nav ul{
+  padding: 1rem 0.2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style-type: none;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+
+nav.top-nav ul li {
+  font-size: 0.9em;
+  margin: 0 0.6em;
+  transition: background-color .3s ease-in, opacity .3s;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav.top-nav ul li:hover {
+  background-color: black;
+  opacity: 0.8;
+}
+
+
+.top-nav li a i{
+  margin: 1em;
+  font-size: 1.2em;
+  transition: opacity .3s
+}
+
+a > i:hover{
+  opacity: .7;
+}
+
+
+
+
+
+/************************
+    ABOUT SECTION
+************************/
+
+.about-section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  color: #000;
+}
+
+.about-me {
+  position: absolute;
+  top: 60%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+
+}
+
+.about {
+  display: block;
+}
+
+.about-me img {
+  height: 200px;
+  border-radius: 100%;
+
+}
+
+.about-line {
+  font-size: 1.2em;
+  margin: 1.3em 0;
+}
+
+#about-line-cover {
+  position: absolute;
+  background-color: blue;
+  height: 40px;
+  opacity: 0;
+  overflow: hidden;
+}
+
+
+
+
+/************************
+    INTERESTS SECTION
+************************/
+
+section > header > h2 {
+  margin: 0 !important;
+  font-size: 2em;
+}
+
+
+.interests {
+  margin: 0 auto;
+  max-width: 55em;
+  border-top: 1px dotted #ccc;
+  border-bottom: 1px dotted #ccc;
+  padding: 5em 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 20px;
+  z-index: 1;
+}
+
+.interest-icon {
+  position: relative;
+  z-index: 2;
+  list-style-type: none;
+}
+
+img.int {
+  height:40px;
+  margin-bottom: 12px;
+  animation: rollout 0.9s ease-out;
+
+}
+
+
+.interest-cover {
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  height: 50px;
+  z-index: 10;
+}
+
+
+
+
+
+
+
+
+/************************
+    PORTFOLIO SECTION
+************************/
+
+
+
+.portfolio-section {
+  background-color: #fff;
+  color: #000;
+  padding: 10em 0;
+}
+
+.portfolio {
+  display: grid;
+  position: relative;
+  grid-gap: 40px;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  /* border-top: 1px dotted #ccc; */
+  padding: 0 3em;
+  max-width: 55em;
+  z-index: 5;
+  overflow: hidden;
+}
+
+#top-line {
+  /* background-color: blue; */
+  grid-column: 1/6;
+  height: 20px;
+  border-top: 1px solid #000;
+  margin: 3em 0;
+}
+
+
+.project {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 120px;
+  padding: 0.8em;
+  z-index: 1;
+}
+
+/* image + label holder */
+.project-image-container {
+  position: relative;
+  max-width: 120px;
+  line-height: normal;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.project-image-container img {
+  background-color: red;
+  width: 120px;
+  height:120px;
+  transition: opacity 0.4s ease-in, transform 0.4s;
+}
+
+/* THE IMAGE ITSELF - expands inside overflow hidden*/
+.project-image-container:hover img {
+  z-index: 0;
+  opacity: 0.7;
+  transform: scale(1.2);
+}
+
+/* IMAGE-OVERLAY TEXT - hidden */
+.project-image-container h3 {
+  position: absolute;
+  color: #003399;
+  font-weight: bold;
+  opacity: 0;
+  top: 20%;
+  transition: opacity 0.4s ease-in;
+}
+
+/* SHOW OVERLAY TEXT */
+.project-image-container:hover h3 {
+  z-index: 1;
+  opacity: 1;
+}
+
+
+/* IMAGE INSIDE HOLDER */
+/* .project-image-container img {
+  transition:  opacity 0.4s ease-in;
+} */
+
+
+
+.btn {
+  width: 60%;
+  background-color: black;
+  border: none;
+  text-align: center;
+  margin: 4% auto;
+  max-width: 55%;
+  padding: 5%;
+  font-size: 0.9em;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in;
+}
+
+.view-demo {
+  margin-top: 9%;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+section > header > h2 {
+  margin: 40px; auto;
+}
+
+
+
+/************************
+      DEMO & CODE MODALS
+************************/
+
+.modal {
+
+}
+
+
+.modal-content {
+
+}
+
+
+
+
+/************************
+  ANIMATE INTEREST ICONS
+************************/
+
+@keyframes rollout {
+  0%{transform: translateX(-200px);}
+  100%{transform: translateX(0);}
+
+}
+
+
+
+
+/************************
+    CONTACT FORM SECTION
+************************/
+
+section#contact-section {
+  background-color: #f5f5f5;
+  padding: 4em 1em;
+}
+
+#dropper {
+  position: relative;
+  margin: 0 auto;
+  margin: 0 auto;
+  height: 100px;
+}
+
+#drop1, #drop2, #drop3 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #ccc;
+  max-height: 50px;
+}
+
+#drop2 {
+    top: 30px;
+}
+
+#drop3 {
+    top:60px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 35%;
+}
+
+form > input, form > textarea {
+  padding: 4%;
+  margin: 3%;
+  border: none;
+  border-bottom: 1px dotted #ccc;
+}
+
+form #submit {
+  letter-spacing: 0.4em;
+  cursor: pointer;
+  transition: background-color .3s ease-in, box-shadow 0.3s;
+}
+
+
+form #submit:hover {
+  background-color: #c8c8c8;
+  box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.20);
+}
+
+
+/************************
+      FOOTER
+************************/
+
+footer {
+    background-color: #85144b;
+    padding: 1em 0;
+    display: grid;
+}
+
+.bottom-nav {
+  max-width: 50em;
+  display: grid;
+  margin: 0 auto;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style-type: none;
+  text-align: center;
+
+}
+
+.bottom-nav li{
+  line-height: 1.9em;
+}
+
+.bottom-nav li a {
+  font-size: 0.9em;
+  color: #fff;
+
+}
+
+.fa-arrow-alt-circle-up {
+  margin: 5px;
+}
+
+@media (max-width: 540px) {
+
+  .int {
+    ;
+  }
+
+}

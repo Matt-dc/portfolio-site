@@ -1,0 +1,6 @@
+When the about-section appears from  below, the animation begins
+A pin-spacer is inserted which adjusts its height to allow the full animation to happen
+This animation is the fading out of the old, and the fading in of the new
+Once the animation is complete, the about section is allowed to run past
+Once the about section has run past, the portfolio section will appear from the bottom of the page
+This will then trigger the fading out of the about and the fading in of the portfolio section
