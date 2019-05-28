@@ -18,7 +18,7 @@
 
 
     <section>
-      <div id="cover">
+      <!-- <div id="cover"> -->
         <div class="scene-pin1">
        <nav class="top-nav">
          <ul>
@@ -165,10 +165,13 @@
           <div id="drop2">˅</div>
           <div id="drop3">˅</div>
         </div>
-        <form class="" action="index.html" method="post">
-          <input type="text" name="" placeholder="email">
-          <input type="text" name="" placeholder="name">
-          <textarea name="name" rows="8" cols="50" placeholder="message"></textarea>
+
+        <div class="alert">Thanks for your message!</div>
+        <form action="https://formspree.io/email@domain.tld" method="POST" />
+        <form id="contactform">
+          <input type="email" name="email" id="email" placeholder="email" required>
+          <input type="text" name="name" id="name" placeholder="name" required>
+          <textarea name="message" id="message" rows="8" cols="50" placeholder="message" required></textarea>
           <input type="submit" id="submit" name="" value="submit">
     </form>
 
@@ -187,8 +190,7 @@
     </nav>
 
   </footer>
-  <script type="text/javascript" src="script.js">
-
-  </script>
+  <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase.js"></script>
+  <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
